@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="me.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .container-wrapper {
+            max-width: 600px;
+            margin: 30px auto;
+            padding: 20px;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: relative;
+            background-color: #fff;
+        }
+
+        .theme-switch {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            z-index: 9999;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+        }
+
+        .slider {
+            position: relative;
+            width: 60px;
+            height: 34px;
+            margin: 0 10px;
+            background-color: #ccc;
+            border-radius: 34px;
+            transition: background-color 0.3s;
+        }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 26px;
+            width: 26px;
+            right: 4px;
+            bottom: 4px;
+            background-color: white;
+            border-radius: 50%;
+            transition: transform 0.3s;
+        }
+
+        input:checked + .slider {
+            background-color: #2196F3;
+        }
+
+        input:checked + .slider:before {
+            transform: translateX(-26px);
+        }
+
+        input:checked + .slider i.fa-sun {
+            opacity: 1;
+        }
+
+        input:checked + .slider i.fa-moon {
+            opacity: 0;
+        }
+
+        .slider i.fa-sun {  
+    position: absolute;
+    left: 65px; /* 調整太陽的水平位置，根據需要調整數值 */
+    top: 4px; /* 調整太陽的垂直位置，根據需要調整數值 */
+    font-size: 24px;
+    color: #ffffff; /* 太陽顏色為白色 */
+    transition: opacity 0.3s;
+}
+
+.dark-theme .slider i.fa-sun {
+    color: #ffffff; /* 在黑暗主題下太陽顏色為黑色 */
+}
+
+input:checked + .slider i.fa-moon {
+    opacity: 0;
+}
+        .slider i.fa-moon {
+    position: absolute;
+    right: 62px; /* 調整月亮的水平位置，根據需要調整數值 */
+    top: 4px; /* 調整月亮的垂直位置，根據需要調整數值 */
+    font-size: 24px;
+    color: #000000;  /* 月亮顏色為黑色 */
+    transition: opacity 0.3s;
+}
+    </style>
+    <link rel="shortcut icon" href="cockroach.jpg">
+    <title>Cockroach</title>
+</head>
+
+<body>
+    <!-- 切換主題的滑動式開關 -->
+    <label class="theme-switch">
+        <input type="checkbox" onclick="toggleTheme()">
+        <div class="slider">
+            <i class="fas fa-sun"></i>
+            <i class="fas fa-moon"></i></div>
+    </label>
+
+    <!-- 其他內容... -->
+    <div class="profile-container">
+        <div class="profile-header">
+            <img src="cockroach69.png" alt="...沒照片..." class="profile-image">
+            <div class="profile-info">
+                <h2>info215120<a href="https://www.instagram.com/kent_215120/" class="IG-button"><button class="follow-button">追蹤</button></h2></a>
+                <div class="stats">
+                    <p>0<span class="bold">貼文</span></p>
+                    <p>1萬位<span class="bold">粉絲</span></p>
+                    <p>0<span class="bold">追蹤</span></p>
+                </div>
+            </div>
+        </div>
+        <p class="me-section"><h3>海洛因🐚</h3></p>
+        <p class="me-section">哈囉~我是一個對於程式設計很感興趣的小孩<br>
+        平時沒事就坐在家裡打遊戲或是寫code(結果都在打遊戲)<br>
+        歡迎點點追蹤~~(真的有用:D)</p>
+        <div class="stats"><p>
+            <h3>貼文(待添加)</h3>
+        </p></div>
+        <div class="post-list">
+            <!-- 每篇帖子的结構 -->
+
+            <div class="post">
+                <img src="cockroach.jpg" alt="Post Image 1" class="post-image">
+                <img src="cockroach.jpg" alt="Post Image 2" class="post-image">
+
+                <!-- 更多帖子... -->
+
+                <script>
+                    function toggleTheme() {
+                        const body = document.body;
+                        const bio = document.querySelector('.bio');
+
+                        // 切換黑白主題
+                        body.classList.toggle('dark-theme');
+
+                        // 切換字體顏色
+                        if (body.classList.contains('dark-theme')) {
+                            bio.style.color = 'white';
+                        } else {
+                            bio.style.color = 'black';
+                        }
+                    }
+                </script>
+            </body>
+
+</html

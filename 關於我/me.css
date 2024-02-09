@@ -1,0 +1,112 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+.profile-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+}
+
+.profile-image {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+}
+
+.profile-info {
+  flex: 1;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.stats p {
+  flex: 1;
+  text-align: center;
+}
+
+.follow-button {
+  background-color: #3897f0;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 15px; /* 調整文字大小 */
+  margin-top: -30px; /* 向上移動 10 像素 */
+  margin-left: 20px; /* 向右移動 10 像素 */
+}
+
+.bio {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.post-list {
+  margin-top: 20px;
+}
+
+.post {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.post-image {
+  width: 48%;
+  border-radius: 5px;
+}
+
+/* 在这里添加原始样式 */
+body {
+  /* 其他样式... */
+  font-weight: bold; /* 设置为正常字体权重 */
+}
+.bio {
+  /* 其他样式... */
+  transition: color 0.3s; /* 添加过渡效果，使切换更平滑 */
+}
+/* 在切换到黑暗主题时应用的样式 */
+body.dark-theme {
+  background-color: black;
+  color: white;
+  font-weight: bold; /* 设置为粗体字体权重 */
+}
+.profile-container {
+  max-width: 600px;
+  margin: 30px auto; /* 上边距增加到20px */
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/*取消掉滑動式開關旁邊的勾選*/
+.theme-switch input {
+  display: none; /* 新增 */
+}
+.theme-switch {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 9999;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+
+.stats h3 {
+    font-weight: bold;
+}
